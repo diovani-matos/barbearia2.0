@@ -8,13 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>La peruca - Barber Shop!</title>
 </head>
 <body>
     <div class="bg-home">
         <header>
             <nav class="header-content container">
-                <div class="header-icons">
+                <div class="header-icons" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
                     <a href="#">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                     </a>
@@ -26,19 +28,19 @@
                     </a>
                 </div>
 
-                <div class="header-logo">
+                <div class="header-logo" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
                     <img src="style/images/logo.svg" alt="logo-barbearia">
                 </div>
 
-                <div>
-                    <a class="header-button" href="#">Agendar horário</a>
+                <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a class="header-button" href="https://api.whatsapp.com/send?phone=5551999999999&text=Gostaria de agendar um horário!" target="_blank">Agendar horário</a>
                 </div>
             </nav>
 
-            <main class="hero container">
+            <main class="hero container" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
                 <p>Horário de funcionamento: 09:00 ás 20:00</p>
-                <a class="button-contact" href="#" target="_blank">
+                <a class="button-contact" href="https://api.whatsapp.com/send?phone=5551999999999&text=Gostaria de agendar um horário!" target="_blank">
                    Agendar horário 
                 </a>
             </main>
@@ -47,12 +49,12 @@
     </div>
 
     <section class="about">
-        <div class="container about-content">
+        <div class="container about-content" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
             <div>
                 <img src="style/images/images.svg" alt="imagem-barber">
             </div>
 
-            <div class="about-description">
+            <div class="about-description" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
                 <h2>Sobre</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet, rerum consectetur eveniet, esse similique at quia natus quisquam reiciendis iusto id quidem, debitis ipsa optio nisi sint earum recusandae.</p>
                 <p>Horário de funcionamento: <strong>09:00</strong> ás <strong>20:00</strong>!</p>
@@ -69,29 +71,63 @@
 
         <section class="haircuts">
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <img src="style/images/corte1.png" alt="corte-cabelo">
                 <div class="haircut-info">
                     <strong>Corte simples</strong>
                     <button>R$ 30,00</button>
                 </div>
+            </div>
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">
                 <img src="style/images/corte3.png" alt="corte-degrade">
                 <div class="haircut-info">
                     <strong>Corte degradê</strong>
                     <button>R$ 40,00</button>
                 </div>
+            </div>
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <img src="style/images/corte2.png" alt="corte e barba">
                 <div class="haircut-info">
                     <strong>Corte + Barba</strong>
                     <button>R$ 50,00</button>
                 </div>
-
             </div>
+
         </section>
     </section>
+
+    <div class="services">
+        <h2>Venha conhecer!</h2>
+        <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6939.145470731692!2d-50.07546122229009!3d-29.587032599999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951883d6baecba87%3A0xbff8e4a5aa148b7e!2sPrefeitura%20Municipal%20de%20Terra%20de%20Areia!5e0!3m2!1spt-BR!2sbr!4v1696205295854!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+
+        <div>
+            <img src="style/images/logo.svg" alt="logo-barbearia">
+        </div>
+
+        <p>&copy; Copyright 2023 | <a href="https://www.instagram.com/diovanimatos/" target="_blank"><strong>Diovani Matos</strong></a> - Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=5551999999999&text=Gostaria de agendar um horário!" target="_blank" class="btn-wpp" data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="style/images/whatssapp.svg" alt="botao-wpp">
+        <span class="tooltip-text">Agende seu horário</span>
+    </a>
+
+    <script src="script.js"></script>
 </body>
 </html>

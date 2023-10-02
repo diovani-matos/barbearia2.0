@@ -232,12 +232,139 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
 }
 
+.haircut {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
 .haircut img {
-  max-width: 200px;
+  width: 100%;
+  max-width: 354px;
+  transition: transform 0.25s;
 }
 
+.haircut img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.haircut-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.haircut-info button {
+  color: #ffffff;
+  background-color: #D94140;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  .haircuts {
+    flex-direction: column;
+  }
+  .haircut img {
+    max-width: 740px;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: #ffffff;
+}
+
+.footer strong {
+  color: #ffffff;
+}
+
+.footer strong:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-icons a:hover .fa-facebook {
+  animation: translateY 0.8s infinite alternate;
+  color: #3b5998;
+}
+.footer-icons a:hover .fa-instagram {
+  animation: translateY 0.8s infinite alternate;
+  color: #dd2a7b;
+}
+.footer-icons a:hover .fa-tiktok {
+  animation: translateY 0.8s infinite alternate;
+  color: #fe2c55;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.btn-wpp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+}
+.btn-wpp img {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+.btn-wpp img:hover {
+  transform: scale(1.1);
+}
+
+.btn-wpp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #232224;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-wpp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-wpp img {
+    max-width: 64px;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
